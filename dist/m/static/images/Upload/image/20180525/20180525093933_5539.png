@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<link type="text/css" rel="stylesheet" href="/Assets/style/default/common.css?version=20200409"/>
+<link type="text/css" rel="stylesheet" href="/Assets/style/default/errorpages/404.css?version=20200409"/>
+<!--[if lt IE 9]><script src="/Assets/script/base/html5shiv/3.7.3/html5shiv-printshiv.js"></script><![endif]-->
+<script>
+  // 站点常量
+  var FOXUC = {
+    DEBUG: 0,
+    ROOT: '/Assets/script/',
+    VERSION: '20191008',
+    back: function (){
+      var name = decodeURIComponent(top.name);
+      var re = /\?main-refresh=(\w+?)(?:\?|$)/;
+
+      if (name.indexOf('name-storage:') === 0 && !re.test(name)) {
+        name = name + encodeURIComponent('?main-refresh=true');
+      } else {
+        name = encodeURIComponent('name-storage:?main-refresh=true');
+      }
+
+      // 覆写 window.name
+      top.name = name;
+
+      // 后退
+      top.history.go(-1);
+    },
+    open: function (url, name, width, height, top, left){
+      name = name || 'FOXUCMISSION' + (new Date()).getTime();
+      width = width || 1200;
+      height = height || 750;
+
+      // 计算数值
+      top = top >= 0 ? top : (window.screen.availHeight - height) / 2 - 32;
+      left = left >= 0 ? left : (window.screen.availWidth - width) / 2 - 10;
+
+      var state = 'toolbar=no,menubar=no,scrollbars=yes,'
+            + 'location=yes,status=no,channelmode=no,directories=no,'
+            + 'top=' + top + ',left=' + left + ','
+            + 'width=' + width + ',height=' + height,
+        openWindow = window.open(url, name, state);
+
+      // 弹窗设置焦点
+      openWindow && openWindow.focus && openWindow.focus();
+    },
+    close: function(){
+      window.close();
+    }
+  };
+  !FOXUC['\x44\x45\x42\x55\x47']&&!/^www\.foxuc\.cn$/['\x74\x65\x73\x74'](window['\x6c\x6f\x63\x61\x74\x69\x6f\x6e']['\x68\x6f\x73\x74'])&&window['\x6c\x6f\x63\x61\x74\x69\x6f\x6e']['\x72\x65\x70\x6c\x61\x63\x65']('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x66\x6f\x78\x75\x63\x2e\x63\x6e');
+</script>
+<script id="seajsnode" src="/Assets/script/seajs/3.0.1/sea.js?version=20191008"></script>
+<!-- <script defer src="/Assets/script/view/common.js"></script> -->
+<!--  -->
+
+<script>seajs.use(['/Assets/script/view/common.js']);</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132442101-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-132442101-1');
+</script><title>
+	棋牌开发,棋牌游戏开发,手机棋牌游戏开发,棋牌游戏开发商-深圳市纹桃科技有限公司
+</title></head>
+<body>
+<!--头部S-->
+
+<noscript>
+  <style type="text/css">
+    body {
+      padding-bottom: 31px;
+    }
+    .noscript {
+      line-height: 30px; cursor: default;
+      background: #fff1a8; width: 100%;
+      text-align: center; color: #f00;
+      border-top: 1px solid #f0c36d;
+      position: fixed; z-index: 998;
+      left: 0; bottom: 0;
+    }
+  </style>
+  <div class="noscript">
+    您已经禁用了浏览器脚本，网站的一些功能可能无法正常使用，如果想获得更好的体验请开启脚本！
+  </div>
+</noscript>
+<!--[if lte IE 8]>
+<style type="text/css">
+  body {
+    padding-bottom: 31px;
+  }
+  .obsolete {
+    line-height: 30px; cursor: default;
+    background: #fff1a8; width: 100%;
+    text-align: center; color: #f00;
+    border-top: 1px solid #f0c36d;
+    position: fixed; z-index: 998;
+    left: 0; bottom: 0;
+  }
+</style>
+<div class="obsolete">
+  您当前的浏览器版本过低，存在安全风险而且无法获得完美的浏览体验，建议升级浏览器（推荐使用 Chrome，Firefox 等现代游览器）！
+</div>
+<![endif]-->
+<div class="ui-top-fix" id="top-fix">
+  <header class="ui-nav-panel">
+    <div class="ui-nav-center">
+      <div class="ui-top-content">
+        <div class="ui-logo fn-left">
+          <a href="/" title="FOXUC纹桃">
+            <img src="/Assets/images/logo.png" alt="棋牌游戏开发商" title="棋牌游戏开发商" />
+          </a>
+        </div>
+        <nav class="ui-nav fn-left">
+          <ul>
+            <li class="ui-nav-box">
+              <a href="/" class="ui-nav-1 ">
+                首页
+                <p >HOME</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/product-detail/zy/game-app.html" class="ui-nav-2 ">
+                产品
+                <p >PRODUCT</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/operate/index.html" class="ui-nav-3 ">
+                家园
+                <p >HOMELAND</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/case/index.html" class="ui-nav-4 ">
+                案例
+                <p >CASE</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/news/original.html" class="ui-nav-5 ">
+                资讯
+                <p >NEWS</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/about/index.html" class="ui-nav-6 ">
+                关于
+                <p >ABOUT</p>
+              </a>
+            </li>
+            <li class="ui-nav-line">
+              <img src="/Assets/images/line.png" />
+            </li>
+            <li class="ui-nav-box">
+              <a href="/contact/index.html" class="ui-nav-7 ">
+                联系
+                <p >CONTACT</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="ui-telphone fn-left">
+          <div></div>
+          <i class="fn-left"></i>
+          <span class="fn-left"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+<!--头部E-->
+<main>
+    <div class="ui-notfound">
+        <div class="ui-notfound-content">
+            <div class="ui-imgbox">
+            <img src="/Assets/images/404.png" />
+            </div>
+            <div class="ui-textbox">
+            <h3>很抱歉，您访问的页面不存在！</h3>
+            <p>1、请检查您输入的地址是否正确；</p> 
+            <p>2、通过<a href="/">返回首页</a>进行浏览；</p>
+            <p>3、感谢您使用本站，如有疑问<a href="/contact/index.html">请联系我们</a>。</p>
+            </div>
+        </div>
+    </div>
+</main>
+<!--尾部S-->
+
+<!-- 浮窗 -->
+  <div class="ui-service" id="service-content">
+    <div class="ui-service-1">
+      <img src="/Assets/images/service_icon.png" /><span>客服中心</span>
+    </div>
+    <div class="ui-service-2">
+      <img src="/Assets/images/qrcode_3.png"/>
+      <p>关注公众号获取行业干货</p>
+      <div class="ui-service-btn" id="service">
+        在线客服
+        <p></p>
+      </div>
+    </div>
+    <div class="ui-service-3">
+      <div>张小姐<a rel="nofollow" href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNjgwOF80OTA1NDNfNDAwMDAwNzA0M18yXw" target="_blank"><img src="/Assets/images/qqtalk.png" alt="QQ交谈" title="QQ交谈" /></a></div>
+      <div>刘小姐<a rel="nofollow" href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNjgwOF80OTA1NDNfNDAwMDAwNzA0M18yXw" target="_blank"><img src="/Assets/images/qqtalk.png" alt="QQ交谈" title="QQ交谈" /></a></div>
+      <div>南小姐<a rel="nofollow" href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNjgwOF80OTA1NDNfNDAwMDAwNzA0M18yXw" target="_blank"><img src="/Assets/images/qqtalk.png" alt="QQ交谈" title="QQ交谈" /></a></div>
+      <div>周小姐<a rel="nofollow" href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAzNjgwOF80OTA1NDNfNDAwMDAwNzA0M18yXw" target="_blank"><img src="/Assets/images/qqtalk.png" alt="QQ交谈" title="QQ交谈"/></a></div>
+    </div>
+    <div class="ui-service-4">
+      <p>服务热线</p>
+      <div>18711739336</div>
+    </div>
+  </div>
+
+<div id="course-fixed" class="ui-top-home fn-hide">
+  <a id="course-top" href="javascript:;" class="ui-top-home-1"><span>返回顶部</span></a>
+  <a id="qqService" href="javascript:;" class="ui-top-home-2"><span>QQ在线</span></a>
+  <a id="BizQQWPAInfo" href="javascript:;" class="ui-top-home-3"><span>电话咨询</span></a>
+  <a href="https://weibo.com/wanghukeji?refer_flag=1001030101_&amp;is_all=1" rel="nofollow" target="_blank" class="ui-top-home-4" data-cmd="more" data-bd-bind="1487060110927"><span>关注官微</span></a>
+  <a href="javascript:;" class="ui-top-home-5"><span>官方微信</span></a>
+  <a href="javascript:;" class="ui-top-home-6"><span>点击分享</span></a>
+</div>
+<div id="dialog-backdrop" class="ui-dialog-backdrop"></div>
+<span id="weixin-qrcode" class="ui-weixin-qr1">
+  <h2 class="fn-clear">官方微信 <a class="ui-pop-close fn-right"></a></h2>
+  <div class="ui-qrleft fn-left">
+    <section>
+      <img src="/Assets/images/weixin.png" alt="微信" class="ui-weixin-qrimg"/>
+      <p class="ui-qr-name">
+        <span>微信号：</span>
+        <span>纹桃棋牌开发公众号</span>
+      </p>
+    </section>
+    <div>
+      <img src="/Assets/images/weixin-qr.png">
+      <p>扫一扫，关注纹桃</p>
+      <p>发现更多精彩</p>
+    </div>
+  </div>
+  <div class="ui-qr-right fn-right">
+    <img src="/Assets/images/weixin-phone.png">
+  </div>
+</span>
+<div id="contact-us" class="ui-tel">
+  <h2 class="fn-clear">官方热线 <a class="ui-pop-close fn-right"></a></h2>
+  <p>服务热线</p>
+  <img src="/Assets/images/contact.png">
+  <p class="ui-line"></p>
+  <p class="ui-qq">企业QQ</p>
+  <a id="insideQQ" href="javascript:;" class="ui-main-qq"></a>
+  <p class="ui-line"></p>
+  <p class="ui-service-text">客服热线</p>
+  <img src="/Assets/images/UCmail.png">
+</div>
+<div id="baidu-share" class="ui-share">
+  <h2 class="fn-clear">分享 <a class="ui-pop-close fn-right"></a></h2>
+  <div class="bdsharebuttonbox" data-tag="bdshare">
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">
+      <p>QQ空间</p>
+    </a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">
+      <p>腾讯微博</p>
+    </a>
+    <a href="#" class="popup_sqq" data-cmd="sqq" title="分享到QQ 好友">
+      <p>QQ 好友</p>
+    </a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">
+      <p>新浪微博</p>
+    </a>
+    <a class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网">
+      <p>开心网</p>
+    </a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到贴吧">
+      <div></div>
+      <p>贴吧</p>
+    </a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">
+      <p>微信</p>
+    </a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">
+      <p>人人网</p>
+    </a>
+
+  </div>
+</div>
+<footer>
+  
+  <div class="ui-footer">
+    <div class="ui-footer-top">
+      <a href="/Assets/images/about/HighTechCo.jpg" target="_blank">高新技术企业认定证书</a>|<a href="/Assets/images/about/certificate.jpg" target="_blank">计算机软件著作权登记证书</a>|<a href="/Assets/images/about/certificate_soft.jpg" target="_blank">软件企业认定证书</a>|<a href="/Assets/images/about/bookin.jpg" target="_blank">软件产品登记证书</a>|<a href="/Assets/images/about/license.jpg" target="_blank">企业法人营业执照</a>|<a href="/Assets/images/about/sz.jpg" target="_blank">守合同重信用企业</a>|<a href="http://qr.ccm.gov.cn/lic/58BD9CBB1C934255A22FF3B36ECC9235" target="_blank">粤网文〔2019〕1102-277号</a>|<a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备11009383号-10</a>
+    </div>
+    <div class="ui-footer-content">      
+      <p class="ui-ft-1">棋牌游戏开发，棋牌游戏出售，棋牌游戏平台---纹桃专业提供!</p>
+      <p class="ui-ft-2">版权所有：深圳市纹桃科技有限公司 &nbsp;&nbsp;粤网文〔2019〕1102-277号 &nbsp;&nbsp;粤ICP备：11009383号-10</p>
+      <p class="ui-ft-3">公司地址：深圳市南山区后海中心路 3331 号中建钢构大厦 28 楼 &nbsp;&nbsp;商务热线：<i>18711739336</i> &nbsp;&nbsp;&nbsp;电子邮箱: <a href="mailto:UCBusiness@foxuc.cn">UCBusiness@foxuc.cn</a>&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253493356'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1253493356%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></p>
+      <div class="ui-ft-4">
+        <a rel="nofollow" href="http://www.szga.gov.cn/" target="_blank">
+          <img src="/Assets/images/safety_1.png"  alt="" title=""/>
+        </a><a rel="nofollow" href="http://www.szga.gov.cn/" target="_blank">
+          <img src="/Assets/images/safety_2.png"  alt="" title=""/>
+        </a><a href="/Assets/images/about/about_icp07.jpg" target="_blank">
+          <img src="/Assets/images/safety_3.png"  alt="" title=""/>
+        </a><a rel="nofollow" href="http://www.szwljb.gov.cn/" target="_blank">
+          <img src="/Assets/images/safety_4.png"  alt="" title=""/>
+        </a><a href="/Assets/images/about/about_icp03.jpeg" target="_blank">
+          <img src="/Assets/images/safety_5.png"  alt="" title=""/>
+        </a>
+      </div>
+        <div class="ui-ft-5">
+            <!--百度统计-->
+            <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?21b61a97232534ea0f74432c48fc3dbd";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+
+            </script>
+            <!-- WPA Button Begin -->
+            <script charset="utf-8" type="text/javascript" src="https://wpa.b.qq.com/cgi/wpa.php?key=XzkzODAzNjgwOF8yMDQxODZfNDAwMDAwNzA0M18"></script>
+            <!-- WPA Button END -->
+            <!--互联网文化经营单位-->
+            <a rel="nofollow" href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/58BD9CBB1C934255A22FF3B36ECC9235" target="_blank"><img src="/Assets/images/footer/wenhuajingying.png" width="68" height="68" /></a>
+            <!--工商网监电子标识-->
+            <script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=752d01a1-77ec-43a4-bc6c-a6510a497787&width=50&height=68&type=1" type="text/javascript" charset="utf-8"></script>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<!--尾部E-->
+</body>
+</html>

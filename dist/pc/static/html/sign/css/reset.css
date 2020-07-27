@@ -1,0 +1,338 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  /* transition: color .5s ease;
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease; */
+}
+
+body, dd, div, dt, li, p, span, td {
+  font: 14px/1.5 Microsoft Yahei,SimHei,tahoma,arial,Hiragino Sans GB,SimSun,sans-serif;
+  font-weight: 400;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Microsoft Yahei, SimHei, tahoma, arial, Hiragino Sans GB, SimSun, sans-serif";
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+  height: 0;
+  content: "";
+  clear: both;
+  font-size: 0;
+  display: block;
+  visibility: hidden;
+}
+/* for IE6 IE7 */
+.fn-clear {
+  zoom: 1;
+}
+
+/* 隐藏, 通常用来与脚本配合 */
+.fn-hide {
+  display: none !important;
+}
+
+/* 设置内联, 减少浮动带来的 BUG */
+.fn-left,
+.fn-right {
+  display: inline;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+
+header, footer, div, li, ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*----------------客服中心-----------------start*/
+.ui-service {
+    width: 171px;
+    height: 350px;
+    border: 1px solid #cde9f8;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    left: 0px;
+    background: #fff;
+    top: 370px;
+    z-index: 999;
+    -webkit-box-shadow: 1px 1px 5px #dadada;
+    box-shadow: 1px 1px 5px #dadada;
+}
+
+.ui-service-1 {
+    width: 100%;
+    height: 45px;
+    background: #0491db;
+    border-radius: 0 10px 0 0;
+    line-height: 45px;
+    text-align: center;
+}
+.ui-service-1 > span {
+    font-size: 20px;
+    color: #fff;
+}
+.ui-service-1 > img {
+    vertical-align: -2px;
+    margin-right: 8px;
+}
+.ui-service-2 {
+    margin: 0 auto;
+    width: 146px;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    position: relative;
+}
+.ui-service-2 > p {
+    font-size: 13px;
+    color: #000;
+    font-weight: 900;
+    margin-top: 2px;
+}
+.ui-service-3 {
+    margin: 0 auto;
+    width: 146px;
+    padding: 20px 0 17px 0;
+    text-align: center;
+    /* font-size: 14px; */
+    border-bottom: 1px dashed #e5e5e5;
+}
+.ui-service-3 > div {
+    font-size: 14px;
+}
+.ui-service-3 > div > a > img {
+    vertical-align: -19px;
+    margin-left: 8px;
+    margin-bottom: 7px;
+}
+.ui-service-4 {
+    margin: 0 auto;
+    width: 146px;
+    padding: 9px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+.ui-service-4 > div {
+    width: 100%;
+    background: #e9e9e9;
+    color: #0491db;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.ui-service-btn {
+    position: absolute;
+    background: #058ed4;
+    width: 19px;
+    height: 114px;
+    border-radius: 0 8px 8px 0;
+    right: -53px;
+    top: 48px;
+    padding: 6px 29px  0 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.ui-service-btn > p {
+    margin-top: 6px;
+    width: 19px;
+    height: 14px;
+    background: url("../images/service_arrow_bg.png") no-repeat 0 -26px;
+}
+
+/*----------------尾部-----------------start*/
+.ui-footer {
+    min-width: 1250px;
+    width: 100%;
+    /* height: 247px; */
+    background: #f6f6f6;
+    /*border-top: 2px solid #e44c40;*/
+}
+.ui-footer-top {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.ui-footer-top > a {
+    margin: 0 5px;
+    color: #666;
+    font-size: 14px;
+}
+.ui-footer-top > a:hover {
+    color: #cc0000;
+}
+
+.ui-footer-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.ui-container-nav {
+    color: #ccc;
+    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.ui-container-nav a {
+    color: #666;
+    text-decoration: none;
+}
+.ui-container-nav a:hover {
+    color: red;
+}
+
+.ui-ft-1 {
+    color: #cc0000;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.ui-ft-2 {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+.ui-ft-3 {
+    font-size: 14px;
+    color: #636363;
+    margin: 10px 0 20px 0;
+}
+.ui-ft-3 > i {
+    font-style: normal;
+    color: #cecece;
+}
+.ui-ft-3 > a {
+    color: #006699;
+}
+.ui-ft-3 > a:hover {
+    text-decoration: underline;
+}
+.ui-ft-4 > a {
+    display: inline-block;
+    margin: 0 4px;
+}
+.ui-ft-4 img {
+    border: 1px solid #ccc;
+}

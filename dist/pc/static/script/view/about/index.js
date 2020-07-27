@@ -1,0 +1,1 @@
+define("view/about/index",["base/jquery/3.2.1/jquery"],function(e,i,a){"use strict";var n=e("base/jquery/3.2.1/jquery"),t=n("#showcase"),s=t.find(".ui-banner-detail img"),r=t.find(".ui-banner-thumbnail section");r.on("mouseenter",function(){var e=n(this);r.removeClass("active"),e.addClass("active"),s.attr("src",e.find("img").data("big"))})});

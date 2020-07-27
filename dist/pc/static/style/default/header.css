@@ -1,0 +1,11 @@
+body {
+  padding-bottom: 31px;
+}
+.noscript {
+  line-height: 30px; cursor: default;
+  background: #fff1a8; width: 100%;
+  text-align: center; color: #f00;
+  border-top: 1px solid #f0c36d;
+  position: fixed; z-index: 998;
+  left: 0; bottom: 0;
+}

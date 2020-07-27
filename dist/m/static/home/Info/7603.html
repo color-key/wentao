@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何在腾讯围剿下存活：JJ斗地主游戏功能深度分析</title>
+    <meta name="keywords" content="纹桃科技,纹桃,棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,棋牌游戏源码,深圳市纹桃科技有限公司">
+    <meta name="description" content="1.产品概述JJ比赛,是全民娱乐的专业棋牌在线竞技平台,首创竞技比赛模式,免费赢奖品。它提供了完备的比赛流程，多种赛制可">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5f962fdeffc54b012aa42a67c2171b51";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+
+        var userAgent = navigator.userAgent.toLowerCase();
+        if (!/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(userAgent)) {
+            window.location.href = "http://www.wtqp666.com/";
+        }
+    </script>
+    <link href="/m/static/bundles/css.css" rel="stylesheet">
+
+    <script src="/m/static/bundles/modernizr.js"></script>
+
+    
+</head>
+<body>
+    <header><img src="/m/static/images/top.jpg"></header>
+    <nav>
+        <ul>
+            <li class="current fn-clean-space">
+                <a href="/m">
+                    <em></em>
+                    <span><img src="/m/static/images/nav_1_active.png"></span>
+                    <div class="title">
+                        <h2>首页</h2>
+                        <p>HOME</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" fn-clean-space">
+                <a href="/m/game">
+                    <i></i>
+                    <em></em>
+                    <span><img src="/m/static/images/nav_2.png"></span>
+                    <div class="title">
+                        <h2>游戏出售</h2>
+                        <p>GAME SELL</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" fn-clean-space">
+                <a href="/m/example">
+                    <i></i>
+                    <em></em>
+                    <span><img src="/m/static/images/nav_3.png"></span>
+                    <div class="title">
+                        <h2>成功案例</h2>
+                        <p>SUCCESS CASES</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" fn-clean-space">
+                <a href="/m/contact">
+                    <i></i>
+                    <em></em>
+                    <span><img src="/m/static/images/nav_4.png"></span>
+                    <div class="title">
+                        <h2>联系我们</h2>
+                        <p>CONTACT US</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="/m/lualm"><img src="/m/static/images/slide/banner6.png"></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="/m/contact"><img src="/m/static/images/slide/banner1.png"></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="../Hall/11.html"><img src="/m/static/images/slide/banner2.jpg"></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="../Hall/8.html"><img src="/m/static/images/slide/banner3.png"></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="../Hall/10.html"><img src="/m/static/images/slide/banner4.png"></a>
+        </div>
+	<div class="swiper-slide">
+            <a href="12978.html"><img src="/m/static/images/slide/banner5.jpg"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="pagination"></div>
+<div class="ui-companyNews new-content">
+    <h5>如何在腾讯围剿下存活：JJ斗地主游戏功能深度分析</h5>
+    <div class="ui-newDetails">
+<!--[if !mso]>
+<![endif]--><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">1.</span></b><b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">产品概述</span></b>
+</p>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"><br>
+</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">JJ</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">比赛<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>是全民娱乐的专业棋牌在线竞技平台<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>首创竞技比赛模式<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>免费赢奖品。它提供了完备的比赛流程，多种赛制可以按照锦标赛的需要组合成各种赛程安排，可以举办多种紧张、激烈、刺激的比赛。<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>比赛移动平台不仅提供斗地主<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>麻将<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>德州扑克<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>四国军棋<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>象棋<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>升级等棋牌游戏<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>同时还有捕鱼<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>桌球<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">,</span>糖果连连消等休闲益智类游戏。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">2.</span></b><b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">产品定位</span></b>
+</p>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"><br>
+</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">JJ</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">斗地主定位为全国性棋牌平台，平台以提供全国性棋牌为主。<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主以比赛竞技为主要特色，凭借棋牌竞技专业化、比赛形式多样化、时时有比赛、天天赢大奖等明显优势，为用户提供了专业、刺激、有趣的竞技体验；同时，在<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>比赛独有的公社体系和复式团队赛中，用户可以深刻的感受到温暖、协作和荣耀。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">3.</span></b><b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">产品结构</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="mso-bidi-font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094906_9933.png" alt=""></span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#337fe5;font-size:14px;">JJ</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#337fe5;font-size:14px;">斗地主产品结构图</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">4.</span></b><b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">用户需求分析</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<b><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">（<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">1</span>）目标用户</span>
+</p>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"><br>
+</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">一二线城市，有基本计算机操作水平，对比赛竞技类游戏感兴趣，年龄约在<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">20</span>岁<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">-50</span>岁有基本收入及空闲时间的用户为主要目标用户。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">（<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">2</span>）用户使用场景</span>
+</p>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"><br>
+</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">1.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">有大段空闲时间，想要玩游戏打发时间，放松身心。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">2.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">有碎片空闲时间，如：等公交，坐公交。想要进行几局快速游戏，可以随时离开。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">3.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">想进行线下棋牌游戏，但是好友没时间或者距离太远。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">4.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">太早或太晚想玩棋牌游戏，好友不方便，不适合聚集朋友。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">5.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">棋牌室环境不好。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">6.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">想通过<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>比赛赚话费和生活物品。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">7.</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">想提升棋牌技巧。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">（<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">3</span>）用户特征</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="mso-bidi-font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094920_5626.png" alt=""></span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#337fe5;font-size:14px;">地域分布（来自：百度指数）</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="mso-bidi-font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094927_3106.png" alt=""></span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#337fe5;font-size:14px;">年龄分布（来自：百度指数）</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="mso-bidi-font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094933_6378.png" alt=""></span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#337fe5;font-size:14px;">性别指数（来自：百度指数）</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">从百度指数可以看到关注<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的人群主要分布在北京、天津、上海等一线城市，地域分布以华北和华东地区为主。<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">30</span>～<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">39</span>岁用户占搜索量的<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">47%</span>，其次为<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">40</span>～<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">49</span>岁占比<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">35%</span>，由此可以推断，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的主要用户集中在<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">30</span>～<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">50</span>岁。男性用户占总用户<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">65%</span>，男性用户较女性用户多。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">因此，可以得到<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的用户画像：年龄处于<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">30</span>岁～<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">50</span>岁并且生活在一二线城市的用户。用户特征：有一定经济基础，属于事业稳定期，有一定空闲时间。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">（<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">4</span>）核心功能</span>
+</p>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"><br>
+</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">1)</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">棋牌游戏和各种休闲类游戏：为用户提供多种玩法的棋牌游戏，每种游戏又分为自由桌、比赛场等模式。填补用户碎片空闲时间并且提供紧张刺激的比赛，满足用户多样的需求场景。通过实物奖品的诱惑，刺激用户充值参与比赛，提升留存和盈利。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">2)</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">论坛功能：公开的社区，用户可以在不同的主题下进行发帖产生内容，所有用户都能看到并基于内容进行互动，营造不同主题社区氛围。提高留存率。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">3)</span><span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;">公社功能：提供主题加入圈子和进行圈子群聊，提升用户黏度。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal" style="text-align:left;" align="left">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<h2>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">二、竞品分析</span>
+</h2>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoNormal">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">JJ</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">斗地主在移动市场占有上的主要竞争对手为腾讯游戏的欢乐斗地主和欢乐麻将。在此选择欢乐斗地主作为竞品分析对象。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p style="margin-left:18.0pt;text-indent:-18.0pt;">
+	<b><span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">1.<span style="font-style:normal;font-size:16px;line-height:normal;font-family:Microsoft YaHei;color:#000000;"> </span></span></span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">目标用户</span></b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"><br>
+</span>
+</p>
+<p style="margin-left:18.0pt;text-indent:-18.0pt;">
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span> <span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">JJ</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">斗地主</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">：棋牌游戏玩家，追求刺激和实物奖励，对比赛竞技感兴趣。</span> <span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">欢乐斗地主</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">：棋牌游戏玩家，关注社交，关注好友排名。</span> <span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<h4>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">2.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">产品主要功能</span>
+</h4>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span> 
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<pre><span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094949_4474.png" alt=""></span></pre>
+<pre><span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">JJ</span><span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">斗地主和欢乐斗地主的产品功能对比</span></pre>
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">可以分析得到，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主更注重游戏本身，是提供休闲娱乐的产品。而欢乐斗地主注重社交，通过道具、角色、场景等设置，打造成一个小型网游。</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"><br>
+</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<h4>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">3.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">游戏模式</span>
+</h4>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span> 
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<pre><span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110094957_9474.png" alt=""></span></pre>
+<p style="text-align:center;">
+	<span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">JJ</span><span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">斗地主和欢乐斗地主游戏模式对比</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">4.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">赢利模式</span></b>
+</p>
+<p>
+	<b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">JJ</span></b><b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">斗地主</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">1.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">通过金豆消耗、实物奖励刺激用户充值</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">2.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">广告商赞助</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">欢乐斗地主</span></b>
+</p>
+<p>
+	<b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"><br>
+</span></b>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">通过金豆消耗、道具、场景、角色等刺激用户充值</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<h4>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">5.</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">分发渠道</span>
+</h4>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span> 
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<pre><span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><img src="../../../static/images/Upload/image/20180110/20180110095008_4630.png" alt=""></span></pre>
+<pre><span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">JJ</span><span style="font-size:14px;line-height:200%;font-family:Microsoft YaHei;color:#337fe5;">斗地主和欢乐斗地主分发渠道对比</span></pre>
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">可以得到，欢乐斗地主的分发市场比<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主多，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主仍需要扩展其分发</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<b><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">三、 总结建议</span></b>
+</p>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"><br>
+</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">JJ</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">斗地主移动端在<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">6</span>年的运营中，在移动棋牌市场已经达到了<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">top5</span>的市场地位。抓住了棋牌玩家追求<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">“</span>刺激<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">”</span>的心理，开创<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">“</span>比赛制<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">”</span>游戏玩法，形成与同类产品的差异化。同时有公开论坛和公社作为社交补充，增加玩家之间的联系，产生对产品的依赖感，提高留存率。根据以上分析，个人有几点建议：</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p style="margin-left:18.0pt;text-indent:-18.0pt;">
+	<span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">1.<span style="color:#000000;"> </span></span></span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">市场： 在市场占有率上，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主已经远超其他老牌棋牌游戏。在游戏行业，付费玩家是核心用户，但普通用户基数必须大才能促成更多的核心用户，市场仍需扩张。在百度指数的地域分布上，我们可以看到，华北、华中是主要搜索来源。但对于棋牌游戏，湖南、四川是棋牌老省，但市场占有率却较低，可以重点扩张这两个市场。不过如何打败地方性棋牌平台，这是一大挑战。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p style="margin-left:18.0pt;">
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p style="margin-left:18.0pt;text-indent:-18.0pt;">
+	<span style="font-size:10.5pt;line-height:200%;font-family:" lang="EN-US"><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">2.<span style="color:#000000;"> </span></span></span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">渠道： 在与欢乐斗地主的分发市场对比下，可以分析得到<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的分发市场较欢乐斗地主少。可以增加其分发渠道。产品市场排名对用户下载产品有很大影响，在<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的几个分发渠道上排名均靠前。不过在应用宝、百度市场上，由于有他们自身开发的棋牌类产品，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主排名并不是特别高。可以与<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">VIVO</span>、<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">OPPO</span>、华为等应用市场合作，原因有<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">1.</span>本身是手机品牌，市场占有大，应用市场有天然优势；<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">2.</span>这几个企业没有自身的棋牌游戏需推广。</span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p class="MsoListParagraph">
+	<span style="line-height:200%;font-family:Microsoft YaHei;color:#000000;font-size:16px;"> </span>
+</p>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span>
+<p>
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">3</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">．用户激励：在与欢乐斗地主的功能对比中，可以分析得到，<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">JJ</span>斗地主的用户留存主要靠比赛游戏模式＋实物奖励，而欢乐斗地主采取了更多激励手段。如可以通过签到、活动、分享等送金豆和参赛券，可以提升免费玩家对金豆和参赛券的感知，引领他们走向高级场（有门票）比赛。或者在游戏首页增加一个滚动播报，播报恭喜赢取大奖的玩家，可以提升玩家对实物奖励的感知，让他们获取<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">“</span>真的可以得奖<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;">”</span>的信息，引领他们走向高级场比赛。</span><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">纹桃科技致力于棋牌游戏开发14年，拥有大量棋牌游戏开发运营经验和大批成功案例。</span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span> </span> 
+</p>
+<p class="MsoNormal" style="font-size:13.3333px;text-indent:20pt;">
+	<span style="font-size:16px;line-height:28px;font-family:Microsoft YaHei;color:#000000;"> </span>
+</p>
+<span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;color:#000000;"> </span>
+<p class="MsoNormal" style="font-size:13.3333px;text-indent:20pt;">
+	<span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;">想开发一款迅速盈利的棋牌游戏，欢迎咨询热线电话：</span><span style="font-size:16px;color:#e53333;font-family:Microsoft YaHei;">18711739336</span>
+</p>
+<span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span>
+<p class="MsoNormal" style="font-size:13.3333px;text-indent:20pt;">
+	<span style="font-size:16px;font-family:Microsoft YaHei;color:#000000;"><br>
+</span>
+</p>
+<div style="font-size:13.3333px;text-align:center;">
+	<img src="../../../static/images/Upload/image/20170117/20170117101536_3914.jpg" alt=""><br>
+<span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span>
+</div>
+<span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-size:16px;font-family:Microsoft YaHei;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span><span style="font-family:Microsoft YaHei;font-size:16px;"> </span>
+<div style="font-size:13.3333px;color:#222222;font-family:Arial, Verdana, sans-serif;text-align:center;">
+	<span style="font-size:16px;"><span style="color:#ff0000;"><b><span style="font-size:16px;color:#e53333;font-family:Microsoft YaHei;">关注纹桃公众号，获取棋牌游戏行业最新资讯</span></b></span></span>
+</div>
+<span style="color:#000000;font-size:16px;font-family:Microsoft YaHei;"> </span> 
+<pre><span style="font-size:16px;line-height:200%;font-family:Microsoft YaHei;color:#000000;"> </span></pre>
+<!--[if gte mso 9]>Normal0false7.8 磅02falsefalsefalseEN-USZH-CNX-NONE<![endif]--><!--[if gte mso 9]><![endif]--><!--[if gte mso 10]>
+<![endif]-->
+</div>
+</div>
+
+
+    <div class="service">
+        <div class="service_title">
+            纹桃棋牌-专注棋牌开发十五年，我们能为您提供：
+        </div>
+        <ul>
+            <li class="fn-clean-space">
+                <em></em>
+                <img src="/m/static/images/service_1.png">
+                <div>
+                    <p>游戏产品</p>
+                    <p class="service_list_1">PRODUCTS</p>
+                </div>
+            </li>
+            <li class="fn-clean-space">
+                <em></em>
+                <img src="/m/static/images/service_2.png">
+                <div>
+                    <p>售后服务</p>
+                    <p class="service_list_2">SERVICE</p>
+                </div>
+            </li>
+            <li class="fn-clean-space">
+                <em></em>
+                <img src="/m/static/images/service_3.png">
+                <div>
+                    <p>技术支持</p>
+                    <p class="service_list_3">TECHNOLOGY</p>
+                </div>
+            </li>
+            <li class="fn-clean-space">
+                <em></em>
+                <img src="/m/static/images/service_4.png">
+                <div>
+                    <p>运营指导</p>
+                    <p class="service_list_4">OPERATING</p>
+                </div>
+            </li>
+        </ul>
+        <div class="service_title">
+<a href="http://qr.ccm.gov.cn/lic/58BD9CBB1C934255A22FF3B36ECC9235" target="_blank">粤网文〔2019〕1102-277号</a>   <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备：11009383号-10</a>
+</div>
+
+    </div>
+    <div class="bottom fn-clean-space">
+        <em></em>
+        <a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=2872536059&version=1&src_type=web&web_src=oicqzone.com"><img src="/m/static/images/bottom_1.png"></a>
+        <a href="tel://18711739336"><img src="/m/static/images/bottom_2.png"></a>
+    </div>
+    <script src="/m/static/bundles/js.js"></script>
+
+    
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent.toLowerCase();
+        var qqlink;
+        $('.qq-link').on('click', function () {
+            if (userAgent.indexOf('baidu') > 0 || userAgent.indexOf('ubrowser') > -1 || userAgent.indexOf('ucbrowser') > -1) {
+                qqlink = "http://p.qiao.baidu.com/cps/chat?siteId=10112377&userId=3809269";
+            } else {
+                qqlink = $(this).attr('data-url');
+            }
+            location.href = qqlink;
+        });
+    </script>
+    <!-- WPA Button Begin -->
+    <!-- <script charset="utf-8" type="text/javascript" src="../../../https_wpa.b.qq.com/cgi/wpa.php%EF%BC%9Fkey=XzkzODAzNjgwOF80OTA3NjJfNDAwMDAwNzA0M18"></script> -->
+    <!-- WPA Button End -->
+</body>
+</html>
