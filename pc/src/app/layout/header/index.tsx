@@ -53,12 +53,12 @@ export default () => {
             <li className="ui-nav-line">
               <img src="/pc/static/images/line.png" />
             </li>
-            {/* <li className="ui-nav-box">
-              <a href={PATH_PREFIX+ "/news"} className={clsx("ui-nav-5", {'active': pathname===PATH_PREFIX+ "/news"})}>
+            <li className="ui-nav-box">
+              <a href={PATH_PREFIX+ "/news"} className={clsx("ui-nav-5", {'active': pathname.startsWith(PATH_PREFIX+ "/news")})}>
                 资讯
-                <p className={clsx({'active': pathname===PATH_PREFIX+ "/news"})}>NEWS</p>
+                <p className={clsx({'active': pathname.startsWith(PATH_PREFIX+ "/news")})}>NEWS</p>
               </a>
-            </li> */}
+            </li>
             <li className="ui-nav-line">
               <img src="/pc/static/images/line.png" />
             </li>

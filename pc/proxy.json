@@ -1,6 +1,6 @@
 [
   {
-    "path": "/api",
-    "target": "http://192.168.1.228:8088/keypool-service/"
+    "path": "api",
+    "target": "http://121.36.218.101:3006/"
   }
 ]

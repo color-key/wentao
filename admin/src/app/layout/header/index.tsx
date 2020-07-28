@@ -53,7 +53,7 @@ export default () => {
   return (
     <div className={classes.root}>
       <div className={classes.topLeft}>
-        天蕾
+        纹桃科技
       </div>
       <div className={classes.topRight}>
         {
