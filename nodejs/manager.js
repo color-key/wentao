@@ -31,6 +31,11 @@ const login = async (data) => {
   return res;
 }
 
+const hash = crypto.createHash('sha256');
+hash.update('Tianlei123');
+const pwd = hash.digest('hex');
+console.log(pwd);
+
 const findManagerByToken = async (data) => {
   const sql = 'SELECT id,username,creation_datetime,token FROM '+mysqlTable+' WHERE `token` = ?';
   const args = [data.token];
@@ -52,10 +57,10 @@ const findManager = async (ctx) => {
   return res;
 }
 
-module.exports = {
-  login,
-  updPassword,
-  addManager,
-  findManager,
-  findManagerByToken
-}
+// module.exports = {
+//   login,
+//   updPassword,
+//   addManager,
+//   findManager,
+//   findManagerByToken
+// }
