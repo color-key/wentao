@@ -2,19 +2,40 @@ import React from 'react';
 import {getJson} from '@fay-react/lib/fetch';
 import {BASE_URL, PATH_PREFIX} from '@/env';
 import {BlogType} from '.';
+import Pagination from '@material-ui/lab/Pagination';
+import { makeStyles } from '@material-ui/core/styles';
+
+const pageNum = 1;
+const pageSize = 10;
+
+const useStyles = makeStyles((theme) => ({
+  pagination: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: theme.spacing(6)
+  },
+}));
 
 export default () => {
+  const classes = useStyles();
 
   const [data, setData] = React.useState<BlogType[]>([]);
+  const [page, setPage] = React.useState(pageNum);
+  const [pageCount, setPageCount] = React.useState(0);
 
   React.useEffect(() => {
-    getJson({path: BASE_URL+'/blog/findByPage?pageNum='+0+'&pageSize='+1}).then(res => {
+    getJson({path: BASE_URL+'/blog/findByPage?pageNum='+(page-1)+'&pageSize='+pageSize}).then(res => {
       console.log(res);
       if(res.success){
         setData(res.result);
+        setPageCount(Math.ceil(res.count/pageSize));
       }
     })
-  }, []);
+  }, [page]);
+
+  const handleChange = (_event: any, value: any) => {
+    setPage(value);
+  };
 
   return (
     <div className="ui-main">
@@ -47,9 +68,7 @@ export default () => {
               })
             }
           </div>
-            {/* <div id="anpPage" className="ui-news-pages">
-        <a style={{marginRight:'5px'}}>首页</a><a style={{marginRight:"5px"}}>上一页</a><span className="active" style={{marginRight:"5px"}}>1</span><a href="/news/original/list2.html" style={{marginRight:"5px"}}>2</a><a href="/news/original/list3.html" style={{marginRight:"5px"}}>3</a><a href="/news/original/list4.html" style={{marginRight:"5px"}}>4</a><a href="/news/original/list5.html" style={{marginRight:"5px"}}>5</a><a href="/news/original/list6.html" style={{marginRight:"5px"}}>...</a><a href="/news/original/list2.html" style={{marginRight:"5px"}}>下一页</a><a href="/news/original/list110.html" style={{marginRight:"5px"}}>尾页</a>
-      </div> */}
+          <Pagination className={classes.pagination} count={pageCount} page={page} onChange={handleChange} />
           </div>
         </div>
     </div>
