@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@fay-react/lib": "0.0.1-alpha.33",
+    "@fay-react/material": "0.0.1-alpha.7",
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.51",

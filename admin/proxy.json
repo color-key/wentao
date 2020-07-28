@@ -1,14 +1,11 @@
 [
   {
     "path": "api",
-    "target": "http://www.tianlad.com/api",
-    "changeOrigin": true,
-    "secure": false,
-    "cookiePathRewrite": "/"
+    "target": "http://121.36.218.101:3006/"
   },
   {
     "path": "test-api",
-    "target": "http://localhost:3000/",
+    "target": "http://121.36.218.101:3006/",
     "changeOrigin": false,
     "secure": false,
     "cookiePathRewrite": "/"

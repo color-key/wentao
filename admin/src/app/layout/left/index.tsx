@@ -54,20 +54,20 @@ const navData = [{
   path: ''
 },{
   icon: ListAltIcon,
-  text: '天蕾学堂',
+  text: '资讯',
   path: '/blog'
-},{
-  icon: ListAltIcon,
-  text: 'SEO需求',
-  path: '/demand'
-},{
-  icon: ListAltIcon,
-  text: 'TDK管理',
-  path: '/tdk'
-},{
-  icon: ListAltIcon,
-  text: '部署',
-  path: '/deploy'
+// },{
+//   icon: ListAltIcon,
+//   text: 'SEO需求',
+//   path: '/demand'
+// },{
+//   icon: ListAltIcon,
+//   text: 'TDK管理',
+//   path: '/tdk'
+// },{
+//   icon: ListAltIcon,
+//   text: '部署',
+//   path: '/deploy'
 }]
 
 export default () => {
