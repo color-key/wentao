@@ -18,7 +18,7 @@ export default function MyApp(props: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>天蕾</title>
+        <title>天蕾企业服务有限公司网站管理后台</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="renderer" content="webkit"/>
         <link rel="manifest" href={`${PATH_PREFIX}/manifest.json`} />
