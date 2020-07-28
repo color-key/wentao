@@ -33,7 +33,7 @@ jobs:
         run: ssh-keyscan ${{ secrets.SERVER_HOST_NAME }} >> ~/.ssh/known_hosts
 
       - name: Run SSH Command To build mobile server
-        run: ssh root@${{ secrets.SERVER_HOST_NAME }} "(docker stop wentao-m || true) && (docker rm wentao-m || true) && (docker rmi wentao-m || true) && cd /fay/service/wentao/m/ && docker build -t wentao-m . && docker run --restart=always -d -p 3004:3000 --name wentao-m wentao-m"
+        run: ssh root@${{ secrets.SERVER_HOST_NAME }} "(docker stop wentao-m || true) && (docker rm wentao-m || true) && (docker rmi wentao-m || true) && cd /fay/service/wentao/m/ && docker build -t wentao-m . && docker run --restart=always -d -p 3007:3000 --name wentao-m wentao-m"
       
 
   
