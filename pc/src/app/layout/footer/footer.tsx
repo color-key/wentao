@@ -1,5 +1,4 @@
 import React from 'react';
-import {PATH_PREFIX} from "@/env";
 
 export default () => {
 
