@@ -23,10 +23,10 @@ export default function MyApp(props: Props) {
   return (
     <React.Fragment>
       <Head>
-        <title>棋牌开发,棋牌游戏开发,手机棋牌游戏开发,棋牌游戏开发商-湖南省纹桃科技公司</title>
+        <title>棋牌开发,棋牌游戏开发,手机棋牌游戏开发,棋牌游戏开发商-湖南省纹桃科技有限公司</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="keywords" content="棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,手机棋牌游戏开发,棋牌游戏源码,纹桃科技,湖南省纹桃科技公司" />
-        <meta name="description" content="湖南省纹桃科技公司从事棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,棋牌游戏源码的职业科技公司，力争成为国际知名棋牌开发,棋牌游戏开发公司，向业界提供优质棋牌游戏产品。" />
+        <meta name="keywords" content="棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,手机棋牌游戏开发,棋牌游戏源码,纹桃科技,湖南省纹桃科技有限公司" />
+        <meta name="description" content="湖南省纹桃科技有限公司从事棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,棋牌游戏源码的职业科技有限公司，力争成为国际知名棋牌开发,棋牌游戏开发公司，向业界提供优质棋牌游戏产品。" />
         <link rel="manifest" href={`${PATH_PREFIX}/manifest.json?v=1`} />
         <link rel="icon" type="image/x-icon" href={`${PATH_PREFIX}/favicon.ico`} />
         <link rel="apple-touch-icon" href={`${PATH_PREFIX}/static/pwa.png`}></link>

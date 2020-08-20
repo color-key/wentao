@@ -626,7 +626,7 @@ export default () => {
         <li>
           <div className="ui-course-title">
             <h2 className="fn-clear">
-    <strong>2005</strong>纹桃科技公司成立 纹桃科技棋牌游戏平台创始版本隆重出场<a>展开显示 5 条历史事件</a>
+    <strong>2005</strong>纹桃科技有限公司成立 纹桃科技棋牌游戏平台创始版本隆重出场<a>展开显示 5 条历史事件</a>
     </h2>
           </div>
           <ul className="ui-course-detail fn-hide">
