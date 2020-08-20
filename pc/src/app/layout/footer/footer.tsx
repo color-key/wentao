@@ -35,15 +35,11 @@ export default () => {
               <img src="/pc/static/images/safety_5.png"  alt="" title=""/>
             </a>
           </div> */}
-          <div className="ui-ft-5">
-            {/* <script src={`${PATH_PREFIX}/static/script/footer.js`}/> */}
-            {/* <!--互联网文化经营单位--> */}
+          {/* <div className="ui-ft-5">
             <a rel="nofollow" href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/58BD9CBB1C934255A22FF3B36ECC9235" target="_blank">
               <img src={`${PATH_PREFIX}/static/images/footer/wenhuajingying.png`} width="68" height="68" />
             </a>
-            {/* <!--工商网监电子标识--> */}
-            {/* <script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=752d01a1-77ec-43a4-bc6c-a6510a497787&width=50&height=68&type=1" type="text/javascript"></script> */}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
