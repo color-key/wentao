@@ -18,9 +18,9 @@ export default function MyApp(props: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>棋牌开发,棋牌游戏开发,手机棋牌游戏开发,棋牌游戏开发商-湖南纹桃科技公司</title>
-        <meta name="keywords" content="棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,手机棋牌游戏开发,棋牌游戏源码,纹桃科技,湖南纹桃科技公司" />
-        <meta name="description" content="湖南纹桃科技公司从事棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,棋牌游戏源码的职业科技公司，力争成为国际知名棋牌开发,棋牌游戏开发公司，向业界提供优质棋牌游戏产品。" />
+        <title>棋牌开发,棋牌游戏开发,手机棋牌游戏开发,棋牌游戏开发商-湖南纹桃科技有限公司</title>
+        <meta name="keywords" content="棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,手机棋牌游戏开发,棋牌游戏源码,纹桃科技,湖南纹桃科技有限公司" />
+        <meta name="description" content="湖南纹桃科技有限公司从事棋牌开发,棋牌游戏开发,棋牌游戏开发商,棋牌游戏程序,棋牌游戏源码的职业科技有限公司，力争成为国际知名棋牌开发,棋牌游戏开发公司，向业界提供优质棋牌游戏产品。" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="renderer" content="webkit"/>
         <link rel="manifest" href={`${PATH_PREFIX}/manifest.json`} />

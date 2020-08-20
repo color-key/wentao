@@ -11,7 +11,7 @@ export default () => {
     <a href="/m/about">显示全部 &gt;</a>
 </div>
 <div className="ui-companyIntro">
-  湖南省纹桃科技公司（简称纹桃科技）是一家专注于PC、手机棋牌游戏开发的科技公司......
+  湖南省纹桃科技有限公司（简称纹桃科技）是一家专注于PC、手机棋牌游戏开发的科技有限公司......
 </div>
 <div className="game_list_title fn-clean-space">
     <em></em>
