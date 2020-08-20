@@ -1,7 +1,7 @@
 {
-  "name": "KeyPool",
-  "short_name": "KeyPool",
-  "description": "KeyPool",
+  "name": "wentao",
+  "short_name": "wentao",
+  "description": "wentao",
   "icons": [
     {
       "src": "/admin/static/pwa.png",

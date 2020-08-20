@@ -54,7 +54,7 @@ export default () => {
           </li>
         </ul>
         <div className="service_title">
-          <a href="http://qr.ccm.gov.cn/lic/58BD9CBB1C934255A22FF3B36ECC9235" target="_blank">粤网文〔2019〕1102-277号</a>   <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备：11009383号-10</a>
+          <a href="http://www.beian.miit.gov.cn/" target="_blank">湘ICP备20014801号</a>
         </div>
       </div>
       <div className="bottom fn-clean-space">
