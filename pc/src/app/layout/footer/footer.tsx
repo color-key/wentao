@@ -10,7 +10,7 @@ export default () => {
         </div>
         <div className="ui-footer-content">      
           <p className="ui-ft-1">棋牌游戏开发，棋牌游戏出售，棋牌游戏平台---纹桃科技专业提供!</p>
-          <p className="ui-ft-2">版权所有：湖南省纹桃科技公司 &nbsp;&nbsp;湘ICP备20014801号</p>
+          <p className="ui-ft-2">版权所有：湖南纹桃科技公司 &nbsp;&nbsp;湘ICP备20014801号</p>
           <p className="ui-ft-3">
             公司地址：湖南省长沙市雨花区嘉熙国际 &nbsp;&nbsp;商务热线：
             <i>18711739336</i>
