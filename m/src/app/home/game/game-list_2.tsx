@@ -39,12 +39,6 @@ export default () => {
             </li>
             <li>
                 <a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=2872536059&version=1&src_type=web&web_src=oicqzone.com">
-                    <img src="/m/static/images/gamelist/icon/18.png"/>
-                    <h2>摇钱树</h2>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=2872536059&version=1&src_type=web&web_src=oicqzone.com">
                     <img src="/m/static/images/gamelist/icon/19.png"/>
                     <h2>幸运夺宝</h2>
                 </a>
