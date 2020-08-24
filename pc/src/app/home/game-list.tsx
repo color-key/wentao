@@ -75,21 +75,9 @@ export default () => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2872536059&site=qq&menu=yes" title="摇钱树">
-              <img src="/pc/static/images/gamelist/g12.png" alt="摇钱树"/>
-              <p>摇钱树</p>
-            </a>
-          </li>
-          <li>
             <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2872536059&site=qq&menu=yes" title="510K">
               <img src="/pc/static/images/gamelist/g13.png" alt="510K"/>
               <p>510K</p>
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2872536059&site=qq&menu=yes" title="足球俱乐部">
-              <img src="/pc/static/images/gamelist/g14.png" alt="足球俱乐部"/>
-              <p>足球俱乐部</p>
             </a>
           </li>
           <li>
