@@ -5,7 +5,7 @@ export default () => {
     <>
     <div className="pagination"></div>
     <div className="sale_btn_box fn-clean-space" id="sell">
-        <a data-id="phonesell"><i></i><img src="/m/static/images/phone_sale_active2.png"/></a>
+        <a data-id="phonesell"><i></i><img src="/m/static/images/phone_sale_active3.png"/></a>
         <a data-id="pcsell"><i></i><img src="/m/static/images/pc_sale2.png"/></a>
     </div>
     <div className="gamehall_download" id="phonesell">
