@@ -44,7 +44,7 @@ export default () => {
             <p>纹桃科技LUA娱乐平台</p>
             <p>1、主打金币模式，打造国际高端娱乐平台 2、全新邮件系统，引领精细化运营 3、全民推广，更简单的用户裂变模式</p>
         </div>
-        <a href="Home/Luayl.html">查看游戏大厅</a>
+        <a href="/m/luayl">查看游戏大厅</a>
     </div>
 </div>
     </>

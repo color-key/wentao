@@ -7,8 +7,8 @@ export default () => {
       <div className="hall_download_title fn-clean-space">
     <em></em>
     <div>
-        <img src="../images/gamehall/icon/8.jpg"/>
-        <img src="../images/game_shadow.png"/>
+        <img src="/m/static/images/gamehall/icon/8.jpg"/>
+        <img src="/m/static/images/game_shadow.png"/>
     </div>
     <div>
         <h2>纹桃科技LUA娱乐平台</h2>
